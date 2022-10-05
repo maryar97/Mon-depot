@@ -1,0 +1,5 @@
+SELECT COUNT(DISTINCT hot_id) FROM hotel GROUP BY hot_sta_id;
+SELECT COUNT(DISTINCT cha_id) FROM chambre JOIN hotel ON hotel.hot_id  = chambre.cha_hot_id JOIN station ON station.sta_id  = hotel.hot_sta_id GROUP BY sta_id;
+SELECT COUNT(DISTINCT cha_id) FROM chambre JOIN hotel ON hotel.hot_id  = chambre.cha_hot_id JOIN station ON station.sta_id  = hotel.hot_sta_id WHERE cha_capacite>1 GROUP BY sta_id;
+SELECT hot_nom FROM hotel JOIN chambre ON cha_hot_id = hotel.hot_id JOIN reservation ON reservation.res_cha_id = chambre.cha_id JOIN client ON client.cli_id = reservation.res_cli_id GROUP BY 'Squire';
+SELECT AVG(DATEDIFF(res_date_debut, res_date_fin)) FROM reservation JOIN chambre ON chambre.cha_id = reservation.res_cha_id JOIN hotel ON hotel.hot_id = chambre.cha_hot_id JOIN station ON station.sta_id = hotel.hot_sta_id GROUP BY sta_id                            

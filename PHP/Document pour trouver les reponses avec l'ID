@@ -1,0 +1,11 @@
+ARTIST_DETAIL:
+-Pour déclencher la page artist_detail il faudra mettre : http://127.0.0.1:8080/artist_detail.php?id=4 (l'ID de ton choix).
+
+ARTIST_FORM: 
+-Pour déclencher la page artist_form il faudra mettre : http://127.0.0.1:8080/artist_form.php?id=4 (l'ID de ton choix).
+
+DISC_DETAIL: 
+- Pour déclencher la page disc_detail il faudra mettre : http://127.0.0.1:8080/disc_detail.php?id=4 (l'ID de ton choix).
+
+MODIFICATION DE DISC:
+-Pour déclencher la page modifdisc il faudra mettre : http://127.0.0.1:8080/modifdisc.php?id=8 (l'ID de ton choix).

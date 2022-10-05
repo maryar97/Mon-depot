@@ -1,0 +1,28 @@
+
+#rouge
+{
+    color: firebrick;
+}
+
+#Astérix
+{
+    color: red;
+    display: inline-block;
+}
+
+.Gras
+{
+    font-size: larger;
+    font-weight: bold;
+
+    
+}
+
+#aling
+{
+    margin: 5px;
+    vertical-align: sub;
+  
+}
+
+

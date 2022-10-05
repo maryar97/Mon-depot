@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title> Contact</title>
+</head>
+<body>
+    <header>
+                                    <!--entête-->
+        
+        <img src=" img/jarditou_logo.jpg" alt="image" height="90" width="300"/>
+        <p> La qualité depuis 70 ans </p>
+    </header>
+        <nav> 
+                             <!--navigation-->
+    
+            <ul> 
+                <li> <a href="index.html" title="accu">  Accueil </a> </li> 
+                <li> <a href="tableau.html" title="tab"> Tableau </a> </li> 
+                <li> <a href="contact.html" title="cont"> Contact </a> </li> 
+            </ul>
+        </nav>
+        
+            <form action="http://bienvu.net/script.php" method="get"> 
+                <img src=" img/promotion.jpg " alt="image" height="auto" width="100%"/>
+                <h1>Contact</h1> 
+                <hr>
+        
+                <p> * Ces zones sont obligatoires </p>
+                
+                <fieldset>
+                   <legend> 
+                    Vos coordonnées
+                   </legend>
+
+                     <label for="nom">Votre Nom* : </label> <input type="text" name="nom" id="nom"> <br>
+                     <label for="prénom">Votre prenom* : </label> <input type="text" name="prenom" id="prénom"> <br>
+                     <br> <label for="sexe1"> Sexe* : </label>
+                     <label for="sexe1"> Feminin</label> <input type="radio" name="sexe" id="sexe1" value="Feminin">
+                     <label for="sexe2"> Maxculin</label> <input type="radio" name="sexe" id="sexe2" value="Maxculin"> <br> 
+                     <br> <label for="date">Date de naissance:</label> <input type="date" name="ddn" id="date">
+                     <br> <label for="Codepostal"> Code postal* : </label> <input type="text" name="Cp" id="Codepostal"><br>
+                     <label for="Adresse"> Adresse : </label> <input type="text" name="Adresse" id="Adresse"> <br>
+                     <label for="Ville"> Ville : </label> <input type="text" name="Ville" id="Ville"> <br>
+                     <label for="dave.loper@afpa.fr">Email* : </label> <input type="text" placeholder="dave.loper@afpa.fr" pattern="^[a-z]+$" required title="dave.loper@afpa.fr (que des caractères entre a et z)" id="dave.loper@afpa.fr">
+        
+                </fieldset> 
+                <br> 
+                <fieldset> 
+
+                    <legend> 
+                        Votre demande 
+                    </legend>
+
+                    <label for="Sujet"> Sujet* : </label>
+
+                       <select id="Sujet"> 
+                         <option value="" selected>Veuillez sélectionner un sujet </option>
+                         <option value="Commandes"> Commandes </option>
+                         <option value="Articles"> Articles</option>
+                         <option value="Accessoires"> Accessoires </option>
+                        </select>
+    
+                        <br>    <label for="question"> Votre question* : </label> 
+                        <textarea name="commentaire" rows="2" cols="17" id="question"> 
+
+                        </textarea>
+       
+                </fieldset>
+                    
+                        <br>     <input type="checkbox" name="?" value="?"> * J'accepte le traitement informatique de ce formulaire
+                        <br>
+  
+                        <br>     <input type="submit" value="Envoyer"> 
+                                 <input type="reset" value="Annuler"> 
+            </form> 
+                    
+                <hr> 
+                    <footer> 
+                                       <!--bas de page-->
+                        <ul> 
+                            <li> <a href="?" title="?"> Mention légale </a> </li> 
+                            <li>  <a href="?" title="?"> Horaires </a> </li>  
+                            <li> <a href="?" title="?"> Plan du site </a> </li> 
+                        </ul>
+                    </footer>
+</body>
+</html>

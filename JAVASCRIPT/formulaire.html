@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter</title>
+    <link rel="stylesheet" href="Concta.css">
+      
+    
+</head>
+<body>
+    
+    <form action="destination.php" name="Formu" onsubmit="return lis()" method="post">
+        <h1>Vos coordonnées:</h1>
+        <h2 id="rouge">* Ces zones sont obligatoires pour envoyer le formulaire.</h2>
+
+        <label class="Gras" for="Société">Société :</label><input type="text" id="aling" name="Société"><h2 id="Astérix">*</h2><br>
+        <label class="Gras" for="Contacter">Personne à contacter :</label><input type="text" id="aling" name="Contact" ><h2 id="Astérix">*</h2><br>
+        <label class="Gras" for="Adresse">Adresse de l'entreprise :</label><textarea id="aling" name="Adresse"></textarea><br>
+        <label class="Gras" for="Postal">Code postal :</label><input type="text" name="Postal" id="aling"><h2 id="Astérix">*</h2><br>
+        <label class="Gras" for="Ville">Ville :</label><input type="text" name="Ville" id="aling"><h2 id="Astérix">*</h2><br>
+        <label class="Gras" for="Mail">E-mail :</label><input type="email" name="Email" id="aling"><h2 id="Astérix">*</h2><br>
+        <label class="Gras" for="Numéro">Téléphone :</label><input type="text" name="Tel" id="aling"><br>
+        <label class="Gras" for="Liste">Sélectionnez l'environnement technique du projet :</label><textarea name="Autre" id="aling"></textarea><br>
+        <select id="Projet"><br>
+            <option value="Défaut">Choisissez</option>
+            <option value="Access">Access</option>
+            <option value="Java">Java</option>
+            <option value="Delphi">Delphi</option>
+            <option value="Windev">Windev</option>
+            <option value="VB">Visual Basic</option>
+            <option value="Pb">Power Builder</option>
+            <option value="Internet">Internet</option>
+            <option value="Intranet">Intranet</option>
+            <option value="WNT">Windows NT</option>
+            <option value="Unix">Unix</option>
+            <option value="SQL">SQL Server</option>
+            <option value="Oracle">Oracle</option>
+            <option value="Autres">Autres...</option>
+    </select>
+    <button type="submit">Envoyer</button> <button type="reset">Annuler</button>
+    </form>
+        <script src="Formulaire.js"></script>
+       
+        
+    
+</body>
+</html>

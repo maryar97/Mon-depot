@@ -1,0 +1,31 @@
+COMMENT AUTORISER L’ACCÈS AU SERVEUR SQL À UN UTILISATEUR ?
+
+En créant un utilisateur qui pourra se connecter depuis une machine (via l'adresse IP) avec un mot de passe renseigné:
+CREATE USER 'nom_utilisateur'@'adresse_ip' IDENTIFIED BY 'mot_de_passe';
+NB: adresse_ip peut être remplacé par le caractère % pour spécifier toutes les adresses.
+Exemples :
+CREATE USER 'dave_loper'@'123.45.67.89' IDENTIFIED BY '1Ksable';
+CREATE USER 'edith_lapage'@'localhost' IDENTIFIED BY 'KC';
+Ici, l'utilisateur nommé dave_loper est autorisé à se connecter depuis le PC ayant l'adresse IP 123.45.67.89 avec le mot de passe 1Ksable.
+l'utilisatrice edith_lapage est autorisé à se connecter depuis son réseau local localhost avec le mot de passe KC.
+
+
+COMMENT LUI AUTORISER L’ACCÈS À UNE BASE DE DONNÉES ?
+
+En lui affectant des droits et en rendant ces droits là effectifs.
+DROIT: 
+GRANT privileges 
+ON objet
+TO utilisateur;
+
+POUR LES RENDRENT EFFECTIFS: 
+FLUSH PRIVILEGES;
+
+
+COMMENT ACCORDER DES DROITS SPÉCIFIQUES À DES UTILISATEURS DIFFÉRENTS ?
+
+Un utilisateur a des droits, il faut également lui permettre d'attribuer lui-même des droits à d'autres utilisateurs.
+Cette autorisation est données en ajoutant la clause (WITH GRANT OPTION) à un utilisateur, sur tout ou partie d'une (ou plusieurs) base(s) de données.
+Exemple: 
+GRANT ALL PRIVILEGES ON hotel.* TO 'admin_hotel'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;

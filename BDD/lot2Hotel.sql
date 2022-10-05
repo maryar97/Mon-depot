@@ -1,0 +1,6 @@
+SELECT sta_nom, hot_nom, hot_categorie, hot_ville FROM hotel JOIN station ON hotel.hot_sta_id = station.sta_id;
+SELECT hot_nom, hot_categorie, hot_ville, cha_numero FROM hotel JOIN chambre ON chambre.cha_hot_id = hotel.hot_id;
+SELECT hot_nom, hot_categorie, hot_ville, cha_numero, cha_capacite FROM hotel JOIN chambre ON chambre.cha_hot_id = hotel.hot_id WHERE hot_ville LIKE 'Bretou' AND cha_capacite>1;
+SELECT cli_nom, hot_nom, res_date FROM client JOIN reservation ON reservation.res_cli_id = client.cli_id JOIN chambre ON chambre.cha_id = reservation.res_cha_id JOIN hotel ON hotel.hot_id = chambre.cha_hot_id;
+SELECT sta_nom, hot_nom, cha_numero, cha_capacite FROM station JOIN hotel ON hotel.hot_sta_id = station.sta_id JOIN chambre on chambre.cha_hot_id = hotel.hot_id;
+SELECT cli_nom, hot_nom, res_date_debut, DATEDIFF(res_date_debut, res_date_fin) FROM client JOIN reservation ON reservation.res_cli_id = client.cli_id JOIN chambre ON chambre.cha_id = reservation.res_cha_id JOIN hotel ON hotel.hot_id = chambre.cha_hot_id;
